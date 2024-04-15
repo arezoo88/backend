@@ -31,20 +31,22 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+
     # Custom Apps
     'store',
     'userauths',
     'vendor',
     'customer',
     'api'
-    
+
 ]
 
 MIDDLEWARE = [
@@ -129,3 +131,11 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+JAZZMIN_SETTINGS = {
+    "site_title": "Store",
+    "site_header": "Store",
+    "site_brand": "Store",
+    "welcome_sign": "Welcome to Store",
+    "copyright": "Store 2024 Alright Reserved",
+}
